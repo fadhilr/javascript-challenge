@@ -13,11 +13,24 @@ Berat badan ideal pria untuk tinggi ... sentimeter adalah ... kilogram
 Berat badan ideal wanita untuk tinggi ... sentimeter adalah ... kilogram 
 
 */
+var tinggi = parseInt(prompt('Masukkan tinggi badan yang ingin dicek (CM)= '))
+var beratPria = beratBadanPria(tinggi)
+var beratWanita = beratBadanWanita(tinggi)
+cetak()
 
-function beratBadanPria() {
-
+function beratBadanPria(tinggiPria) {
+    var hasil = (tinggiPria - 100) - ((tinggiPria - 100) * (10 / 100));
+    return hasil;
 }
 
-function beratBadanWanita() {
-    
+function beratBadanWanita(tinggiWanita) {
+    var hasil = (tinggiWanita - 100) - ((tinggiWanita - 100) * (15 / 100));
+    return hasil;
+}
+
+function cetak() {
+    document.write('Berat badan ideal pria untuk tinggi ' + tinggi + ' sentimeter adalah ' + beratPria + ' kilogram')
+    document.write('<br>')
+    document.write('Berat badan ideal wanita untuk tinggi ' + tinggi + ' sentimeter adalah ' + beratWanita + ' kilogram')
+    document.write('<br>')
 }
