@@ -5,10 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar Javascript</title>
+    
 </head>
 <body>
-    <script src="CaseStudy1.js"></script>
+    <!-- <script src="CaseStudy1.js"></script>
     <script src="CaseStudy2.js"></script>
-    <script src="CaseStudy3.js"></script>
+    <script src="Day 2/CaseStudy3.js"></script>-->
+    <!-- <script src="Day 2/CaseStudy4.js"></script>  -->
+    <script src="Day 2/CaseStudy5.js"></script>
+    <div><h1>Pilihan luas / lingkaran : </h1></div>
+    <div><button id="luas" onclick="viewLuas()">Luas</button> <button id="keliling" onclick="viewKeliling()">Lingkaran</button> </div>
+    <div id="viewLuas" style="display: none;">
+        <p>Pilihan luas bidang datar : </p> <br>
+        <button id="segiEmpat" onclick="segiEmpatL()">Segi empat</button> 
+        <button id="segiPanjang" onclick="segiPanjangL()">Segi panjang</button> 
+        <button id="segiTiga" onclick="segiTigaL()">Segi tiga</button> 
+        <button id="lingkaran" onclick="lingkaranL()">Lingkaran</button> 
+    </div>
+    <div id="hasilLuas" ></div>
+    <div id="viewKeliling" style="display: none;">
+        <p>Pilihan keliling bidang datar : </p> <br>
+        <button id="segiEmpat" onclick="segiEmpatK()">Segi empat</button> 
+        <button id="segiPanjang" onclick="segiPanjangK()">Segi panjang</button> 
+        <button id="segiTiga" onclick="segiTigaK()">Segi tiga</button> 
+        <button id="lingkaran" onclick="lingkaranK()">Lingkaran</button> 
+    </div>
+    <div id="hasilKeliling" ></div>
+    <div id="pilihanPertama"></div>
 </body>
 </html>
